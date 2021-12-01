@@ -1,6 +1,6 @@
 # advent_of_code
-Repo for my advent of code attempts
-
+Repo for my advent of code attempts.
+I will be using raw python.
 
 # How to run
 
