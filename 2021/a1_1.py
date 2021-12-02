@@ -14,7 +14,7 @@ def solution(depths: list[int]) -> int:
 
 if __name__ == "__main__":
 
-    with open("inputs/a1_1.txt", "r") as f:
+    with open("inputs/a1.txt", "r") as f:
         input_ = [int(line) for line in f.readlines()]
 
     print(solution(input_))
