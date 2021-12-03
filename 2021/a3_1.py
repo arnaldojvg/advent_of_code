@@ -1,3 +1,6 @@
+inverse = {"0": "1", "1": "0"}
+
+
 def find_common(binaries: list[str], pos: int) -> str:
 
     ones = 0
@@ -20,12 +23,12 @@ def solution(binaries: list[str]) -> int:
     for pos in range(len(binaries[0])):
         common = find_common(binaries, pos)
         gamma += common
-        epsilon += "0" if common == "1" else "1"
+        epsilon += inverse[common]
 
     return int(gamma, 2) * int(epsilon, 2)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     with open("inputs/a3.txt", "r") as f:
         inputs = [x.rstrip() for x in f.readlines()]
