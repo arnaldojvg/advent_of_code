@@ -25,7 +25,7 @@ def solution(lantern_fishes: list[int], days: int) -> int:
     return sum(fishes_count.values())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     with open("inputs/a6.txt", "r") as f:
         data = f.read()

@@ -1,6 +1,5 @@
 def solution(lantern_fishes: list[int], days: int) -> int:
 
-
     for i in range(days):
         lantern_fishes2 = lantern_fishes.copy()
         for n, fish in enumerate(lantern_fishes2):
@@ -13,7 +12,7 @@ def solution(lantern_fishes: list[int], days: int) -> int:
     return len(lantern_fishes)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     with open("inputs/a6.txt", "r") as f:
         data = f.read()
